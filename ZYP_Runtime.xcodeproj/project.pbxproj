@@ -15,7 +15,8 @@
 		D12990F71F4BD6FC00130DBD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D12990F61F4BD6FC00130DBD /* Assets.xcassets */; };
 		D12990FA1F4BD6FC00130DBD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D12990F81F4BD6FC00130DBD /* LaunchScreen.storyboard */; };
 		D12991221F4C1D6200130DBD /* RtConception.m in Sources */ = {isa = PBXBuildFile; fileRef = D12991211F4C1D6200130DBD /* RtConception.m */; };
-		D12991261F4C233900130DBD /* RtMessageMechanism.m in Sources */ = {isa = PBXBuildFile; fileRef = D12991251F4C233900130DBD /* RtMessageMechanism.m */; };
+		D12991261F4C233900130DBD /* RtMessageMechanism.m in Sources */ = {isa = PBXBuildFile; fileRef = D12991251F4C233900130DBD /* RtMessageMechanism.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D12991291F4C352200130DBD /* RtMsgMecModel.m in Sources */ = {isa = PBXBuildFile; fileRef = D12991281F4C352200130DBD /* RtMsgMecModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -35,6 +36,8 @@
 		D12991211F4C1D6200130DBD /* RtConception.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtConception.m; sourceTree = "<group>"; };
 		D12991241F4C233900130DBD /* RtMessageMechanism.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMessageMechanism.h; sourceTree = "<group>"; };
 		D12991251F4C233900130DBD /* RtMessageMechanism.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtMessageMechanism.m; sourceTree = "<group>"; };
+		D12991271F4C352200130DBD /* RtMsgMecModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RtMsgMecModel.h; sourceTree = "<group>"; };
+		D12991281F4C352200130DBD /* RtMsgMecModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RtMsgMecModel.m; sourceTree = "<group>"; };
 		FB7BEC833F615EB5F709CCDD /* Pods-ZYP_Runtime.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZYP_Runtime.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ZYP_Runtime/Pods-ZYP_Runtime.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -125,6 +128,8 @@
 			children = (
 				D12991241F4C233900130DBD /* RtMessageMechanism.h */,
 				D12991251F4C233900130DBD /* RtMessageMechanism.m */,
+				D12991271F4C352200130DBD /* RtMsgMecModel.h */,
+				D12991281F4C352200130DBD /* RtMsgMecModel.m */,
 			);
 			path = RtMessageMechanism_02;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 				D12991261F4C233900130DBD /* RtMessageMechanism.m in Sources */,
 				D12990F21F4BD6FC00130DBD /* ViewController.m in Sources */,
 				D12990EF1F4BD6FC00130DBD /* AppDelegate.m in Sources */,
+				D12991291F4C352200130DBD /* RtMsgMecModel.m in Sources */,
 				D12991221F4C1D6200130DBD /* RtConception.m in Sources */,
 				D12990EC1F4BD6FC00130DBD /* main.m in Sources */,
 			);
@@ -376,6 +382,7 @@
 			baseConfigurationReference = FB7BEC833F615EB5F709CCDD /* Pods-ZYP_Runtime.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ZYP_Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaoyunpeng.ZYP-Runtime";
@@ -388,6 +395,7 @@
 			baseConfigurationReference = 10535996B3C108094E9868F3 /* Pods-ZYP_Runtime.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ENABLE_STRICT_OBJC_MSGSEND = NO;
 				INFOPLIST_FILE = ZYP_Runtime/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "zhaoyunpeng.ZYP-Runtime";

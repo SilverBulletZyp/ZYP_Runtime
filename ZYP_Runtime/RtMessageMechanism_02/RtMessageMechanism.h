@@ -25,6 +25,8 @@
 /**
     实现方式
         1.导入头文件 #import <objc/message.h>
-        2.
+        2.OC 解决消息机制方法提示步骤 build setting -> 搜索msg -> objc_msgSend（YES --> NO）
+        3.解决ARC与MRC混编问题，添加 -fno-objc-arc
+        4.最终生成消息机制，查看源码 cd -> main.m -> clang -rewrite-objc main.m 生成.opp文件
  
  */
