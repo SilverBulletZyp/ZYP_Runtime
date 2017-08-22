@@ -1,0 +1,12 @@
+PODS:
+  - ZYP_HomeViewController (1.0.5)
+
+DEPENDENCIES:
+  - ZYP_HomeViewController (= 1.0.5)
+
+SPEC CHECKSUMS:
+  ZYP_HomeViewController: f4d8d47efc06c93a6518e180bd6f420224020c44
+
+PODFILE CHECKSUM: 100996839cb9ac9dfa84c125fdabc311e6975b75
+
+COCOAPODS: 1.2.0
