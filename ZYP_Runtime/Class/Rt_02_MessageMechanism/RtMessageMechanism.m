@@ -19,16 +19,10 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    /**
-        对比分析OC与runtime
-     */
-    
+    // 对比分析OC与runtime
     
 //    [self getOCCode];
     [self getRuntimeCode];
-
-
 }
 
 #pragma mark - OC 代码
@@ -68,6 +62,7 @@
     每一个对象内部都有一个isa指针，这个指针是指向它的真实类型，根据这个指针就能知道将来调用哪个类的方法
 
  */
+
 
 
 

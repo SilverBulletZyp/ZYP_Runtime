@@ -21,7 +21,8 @@
     
     
     NSArray *array = @[@{@"name":@"Runtime 概念",@"vc":@"RtConception"},
-                       @{@"name":@"Runtime 消息机制",@"vc":@"RtMessageMechanism"},];
+                       @{@"name":@"Runtime 消息机制",@"vc":@"RtMessageMechanism"},
+                       @{@"name":@"Runtime 交换方法",@"vc":@"RtChangeMethod"},];
     ZYPNavigationController *nav = [[ZYPNavigationController alloc]initWithTitle:@"Runtime" vcArray:array];
     self.window.rootViewController = nav;
     return YES;
