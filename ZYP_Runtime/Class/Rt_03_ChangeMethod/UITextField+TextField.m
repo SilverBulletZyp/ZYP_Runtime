@@ -10,4 +10,14 @@
 
 @implementation UITextField (TextField)
 
+
+- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+    
+}
+
+
+- (void)set_zypPlaceholder:(NSString *)placeholder {
+    [self set_zypPlaceholder:placeholder];
+}
+
 @end

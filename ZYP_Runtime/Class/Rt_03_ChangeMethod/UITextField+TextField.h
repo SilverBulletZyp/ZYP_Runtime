@@ -10,4 +10,8 @@
 
 @interface UITextField (TextField)
 
+@property (nonatomic) UIColor *placeholderColor;
+
+- (void)set_zypPlaceholder:(NSString *)placeholder;
+
 @end
