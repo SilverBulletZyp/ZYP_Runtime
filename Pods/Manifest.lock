@@ -1,12 +1,15 @@
 PODS:
+  - Masonry (1.0.2)
   - ZYP_HomeViewController (1.0.5)
 
 DEPENDENCIES:
+  - Masonry
   - ZYP_HomeViewController (= 1.0.5)
 
 SPEC CHECKSUMS:
+  Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   ZYP_HomeViewController: f4d8d47efc06c93a6518e180bd6f420224020c44
 
-PODFILE CHECKSUM: 100996839cb9ac9dfa84c125fdabc311e6975b75
+PODFILE CHECKSUM: 8978f54dd588826987746ce24c76bda543f8e783
 
-COCOAPODS: 1.2.0
+COCOAPODS: 1.2.1.beta.1

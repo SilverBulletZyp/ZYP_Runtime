@@ -11,8 +11,29 @@
 @implementation UITextField (TextField)
 
 
-- (void)setPlaceholderColor:(UIColor *)placeholderColor {
++ (void)load {
+    Method setPlaceholderMethod = class_getClassMethod(self, @selector(setPlaceholder:));
+    Method setZypPlaceholderMethod = class_getClassMethod(self, @selector(set_zypPlaceholder:));
     
+    method_exchangeImplementations(setPlaceholderMethod, setZypPlaceholderMethod);
+}
+
+- (void)setPlaceholderColor:(UIColor *)placeholderColor {
+    objc_setAssociatedObject(self, @"placeholderColor", placeholderColor, OBJC_ASSOCIATION_RETAIN_NONATOMIC);
+
+    
+    
+    
+    UILabel *label = [self valueForKey:@"placeholderLabel"];
+    label.textColor = placeholderColor;
+    
+    
+    
+}
+
+- (UIColor *)placeholderColor {
+    // 获取类成员属性
+    return objc_getAssociatedObject(self, @"placeholderColor");
 }
 
 
