@@ -29,15 +29,14 @@
         [self.view addSubview:imgBtn];
         
         [imgBtn makeConstraints:^(MASConstraintMaker *make) {
-            make.centerX.equalTo(self.view);
-            make.centerY.equalTo(self.view).multipliedBy(3);
-            make.width.equalTo(180);
+            make.width.equalTo(200);
             make.height.equalTo(50);
+            make.centerX.equalTo(self.view);
+            make.centerY.equalTo(self.view).multipliedBy(0.66).offset(20);
         }];
 
         imgBtn;
     });
-    
     
     
     // textfield change btn
@@ -49,16 +48,14 @@
         [tfBtn addTarget:self action:@selector(onClickTfBtn:) forControlEvents:UIControlEventTouchUpInside];
         [self.view addSubview:tfBtn];
         
-//        [tfBtn makeConstraints:^(MASConstraintMaker *make) {
-////            make.centerX.equalTo(self.view);
-//            
-//        }];
+        [tfBtn makeConstraints:^(MASConstraintMaker *make) {
+            make.width.centerX.and.height.equalTo(imgBtn);
+            make.centerY.equalTo(self.view).multipliedBy(1.33).offset(20);
+        }];
         
         tfBtn;
     });
 
-    
-    
 }
 
 
@@ -81,7 +78,7 @@
 #pragma mark - UITextField 方法交换
 
 - (void)textfieldChangeMethod {
-    [UIImage imageNamed:@"changeMethod"];
+    
 }
 
 

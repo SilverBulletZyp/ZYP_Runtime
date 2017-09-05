@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "ZYP_HomeViewController.h"
 
 @interface AppDelegate ()
 
